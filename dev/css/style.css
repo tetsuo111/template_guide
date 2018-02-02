@@ -1,0 +1,47 @@
+.wrapper {
+  position: relative;
+}
+
+.page-title {
+  background-color: #08d;
+  color: #ffffff;
+  text-align: center;
+}
+.page-title h1 {
+  font-size: 1.875rem;
+}
+
+.section-title {
+  border-left: 10px solid #08d;
+}
+.section-title h2 {
+  font-size: 1.5rem;
+}
+
+.btn {
+  width: 100%;
+}
+.btn .btn-main {
+  background-color: #08d;
+  color: #ffffff;
+}
+.btn .btn-main:hover {
+  opacity: 0.6;
+}
+.btn .btn-sub {
+  background-color: #eee;
+  color: #08d;
+}
+.btn .btn-sub:hover {
+  opacity: 0.6;
+}
+
+.header {
+  height: 80px;
+}
+
+.footer {
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

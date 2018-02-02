@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+		<meta name="format-detection" content="telephone=no,email=no,address=no">
+		<title>注文入力｜コスモスターズ</title>
+		<link rel="stylesheet" href="css/bulma.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="js/jquery.slim.min.js"></script>
+		<script type="text/javascript" src="js/js-order.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<a href="http://www.cosmostars.co.jp/index.html" class="header-link"></a>
+			</header>
+			<section class="main">
+				<div class="main-title has-text-centered">
+					<h1>田中太郎様のお葬儀</h1>
+					<p>
+						<span class="main-title-sub-text">葬儀時間:<span>17:00</span>開始　</span>
+						<span class="main-title-sub-text">ホール名:<span>ハクゼンホール安茂里会館</span></span>
+					</p>
+				</div>
+				<div class="progressbar">
+					<div class="columns is-flex">
+						<div class="column is-3-desktop is-3-mobile  progress-current ud-center">ご注文情報の入力</div>
+						<div class="column is-3-desktop is-3-mobile  progress-outside ud-center">決済情報の入力</div>
+						<div class="column is-3-desktop is-3-mobile  progress-outside ud-center">入力確認画面</div>
+						<div class="column is-3-desktop is-3-mobile  progress-outside ud-center">完了</div>
+					</div>
+				</div>
+				<div class="order">
+					<div class="order-confirm">
+						<h2 class="sub-title">商品情報の確認</h2>
+						<table class="table is-bordered">
+					 		<tr>
+					 			<td class="order-confirm-td-width order-confirm-td-bg">商品画像</td>
+					 			<td class="order-confirm-td-bg">商品名</td>
+					 		</tr>
+					 		<tr>
+					 			<td rowspan="3"><img alt="商品画像" src="img/haruka3.jpg" class="order-confirm-image-td-img"></td>
+					 			<td class="order-confirm-td-detail">弔</td>
+					 		</tr>
+					 		<tr class="order-confirm-trh-adj">
+					 			<td class="order-confirm-td-bg">価格</td>
+					 		</tr>
+					 		<tr>
+					 			<td class="order-confirm-td-detail">1,500円</td>
+					 		</tr>
+					 		<tr>
+					 			<td colspan="2" class="order-confirm-caution">
+					 				<p class="has-text-left">上記価格は、台紙代＋お届け料となります。</p>
+					 				<p class="has-text-left">サービスの性質上、キャンセルは葬儀の2時間前までとさせて頂きます。</p>
+					 			</td>
+					 		</tr>
+						</table>
+						<div class="button-adjust">
+							<form action="item.html" method="get">
+								<input type="submit" name="return" class="button button2" value="商品選択画面に戻る">
+							</form>
+						</div>
+					</div>
+					<form action="">
+						<div class="order-terms">
+							<h2 class="sub-title">利用規約</h2>
+							<textarea name="introduction" cols="45" rows="8" placeholder="利用規約を書いてください" tabindex="1" accesskey="j">
+利用規約
+
+本利用規約は、株式会社コスモスターズ（以下「弊社」といいます）が運営する「弔電ECサイト」において、お客様が商品を注文される場合に適用される諸条件を規定しています。商品のご注文にあたっては、本利用規約が適用されますので、内容をよくお読みいただいた上で、ご注文下さい。
+
+1.契約成立について
+お客様は、本サイトを通じたオンラインでの注文のみでご利用いただけます。なお、下記に定める商品の売買契約成立後の、注文取消又は注文内容の変更は、弊社が特に認める場合を除き、一切お受けできませんので、予めご了承下さい。
+
+(1)本サイト上での注文
+お客様は、本サイトの画面上の申込フォームに必要事項を入力していただき、注文ボタンを押していただくことにより、商品の注文を行うことができます。弊社は、お客様の注文を受付けた場合、注文受付を確認する電子メールをお客様指定の電子メールアドレス宛にご通知申し上げます。弊社による注文受付確認メールの到達をもって、お客様及び弊社間において商品の売買に関する契約が有効に成立するものとします。なお、架空名義、偽名・匿名等、お客様本人以外の名義での注文はできません。
+
+（ご留意事項）
+上記にかかわらず、弊社の意思表示に表示上の錯誤、内容の錯誤又は動機の錯誤がある場合、お客様と弊社間の売買契約は、無効となります。但し、弊社側に重大な過失がある場合には、弊社は、当該売買契約の無効を主張することはできないものとします。なお、意思表示の錯誤には、商品価額、商品名称又は商品仕様に関する表示上の誤りが含まれますが、これらに限られません。電子メール又はお電話での注文が殺到した場合、在庫切れになる場合があります。その場合には、電子メール等にてご案内させていただきます。
+
+2.配送について
+配送料は一切発生いたしません。
+
+3.お支払方法について
+お支払方法は、「クレジットカード決済」でのみご利用いただけます。カート画面上で「カード番号」及び「有効期限」、「セキュリティコード」をご入力いただくことにより、決済を実施します。支払回数及び方法は1回払い（一括払い）のみとさせていただきます。カードブランドはVISA、MASTER、AMERICAN EXPRESS、JCB、DINERS CLUBの5種類からご利用いただけます。
+
+（ご留意事項）
+未成年の方のご利用はお控え下さい。本人以外の名義のクレジットカードでのご注文はお断りします。弊社は、お客様の本人性確認ができない場合又はお客様が直接契約されているクレジットカード会社（以下「カード会社」といいます）もしくはカード会社と提携しているクレジットカード会社（以下「提携カード会社」といいます）によりクレジットカードの利用が拒絶された場合、お客様のご注文をお断りする又は取り消させていただきますので、予めご了承下さい。
+
+弊社ではクレジットカードの不正利用やなりすまし防止について積極的に取り組んでおります。上記の項目にかかわらず、ご注文内容に応じて「身分証明書」のFAXでの提示をご依頼する場合ございますが、予めご了承下さい。
+
+＜「クレジットカード情報」のお取り扱いに関して＞
+弊社のクレジットカード決済は、すべて「ソフトバンク・ペイメント・サービス株式会社」（以下「ソフトバンクペイメント」といいます）のオンライン決済システムを経由してカード会社又は提携カード会社に情報を転送するシステムとなっております。従いまして弊社のコールセンターオペレータや社員、システム担当者がクレジットカード番号を保持・閲覧することはございません。
+
+4.コールセンター（サポート窓口）について
+・フリーダイヤル　0120-08-3322
+・問い合わせフォーム（https://v.rentalserver.jp/hakuzengroup.com/sougi/inquiry/inquiry.php）
+※弊社のサポート窓口の営業時間は、24時間365日。
+
+5.キャンセルについて
+ご注文いただきました商品に関しましては、葬儀開始の2時間前までとさせていただきます。ご注文確認メールに記載の手順に従って、ご注文者様ご自身でキャンセル処理を実施ください。
+
+6.クレジットカードのご利用について
+お客様は、クレジットカード決済を選択する場合、弊社に対して次の各号の行為を行う権限を付与するものとします。
+
+(1)クレジットカード決済を行うために、お客様の注文情報（クレジットカード番号、有効期限及び注文金額とします）をソフトバンクペイメント、カード会社及び提携カード会社（以下、総称して「決済事業者」といいます）に対して伝送又は磁気記憶媒体等により引き渡すこと。なお、弊社からソフトバンクペイメント又は決済事業者間の当該注文情報の伝送にあたっては、第三者の提供するサービスを利用することができるものとします。
+
+(2)過誤、詐欺又は不正な取引の結果、決済事業者に伝送又は磁気記憶媒体等により引き渡された、お客様の注文情報を消去又はそれに基づくクレジットカード決済処理をキャンセルすることとします。
+
+(3)弊社は、決済事業者から弊社に対して、クレジットカード決済を選択したお客様の注文情報についての照会があった場合で、お客様の個人情報を要求された場合には当該決済事業者に対して、お客様の個人情報を提供することとします。
+
+a.クレジットカード決済に必要なシステム等（弊社又は決済事業者が保有するシステムをいい、以下「決済システム」といいます）の運用、点検、補修、保守もしくは障害、不可抗力又はその他弊社が必要と認めた場合に、クレジットカード決済の提供を停止、中断もしくは中止又は当該注文契約を解約する場合があります。この場合、弊社は、クレジットカード決済の停止、中断もしくは中止又は当該注文契約の解約によりお客様に発生した損害について責任を負わないものとします。
+
+b.弊社は、クレジットカード決済において伝送に用いる第三者の回線または機器等に起因する通信不良、遅延、誤送等、クレジットカード決済の運営に係る障害について一切の責任を負わないものとします。
+
+c.お客様は、弊社の都合により、クレジットカード決済の提供が変更され又は終了する場合があることについて予め同意するものとし、当該事由によりクレジットカード決済の提供が不可能となった場合であっても、その理由の如何を問わず、弊社はそれによる責任を負わないものとします。
+
+d.弊社は、弊社の責に帰すべき事由により、クレジットカード決済の提供に関して、お客様に損害を与えた場合、別途本規約に定める場合を除き、その損害を賠償するものとします。但し、かかる損害賠償責任の範囲は、お客様が被った直接且つ現実の損害に限られ、決済システムのエラーによる損害、機会損失等の間接損害は含まれないものとします。
+
+e.前項に基づく弊社のお客様に対する損害賠償金の額は、弊社の故意又は重過失による場合を除き、当該損害賠償を行う時点で、弊社がベリトランスから受領した賠償金額を、当該損害を受けたお客様の数で按分した金額を上限とします。
+
+f.お客様は、クレジットカード決済についてのお問い合せについては、弊社サポート窓口に対して行うものとし、弊社が認める場合を除き、決済事業者に対して直接行わないものとします。
+
+7.個人情報の取り扱いについて
+弊社では個人情報を、別途サイト上に掲示する「個人情報保護方針（http://www.hakuzengroup.com/privacy.html）」に従い、適切に取り扱うものとします。
+
+8.準拠法・合意管轄裁判所について
+本サイトに関する準拠法は、日本法とします。また、本サイトにおける商品の販売、サービスの提供その他本サイトの運営に関する紛争について訴訟の必要が発生した場合、東京簡易裁判所又は東京地方裁判所を第1審の専属的合意管轄裁判所とします。
+
+9.消費税について
+関連法令の改正により消費税の税率に変更が生じた場合には、消費税等相当額は変更後の税率により計算するものとする。
+
+（以上）
+
+株式会社コスモスターズ
+
+弊社は、弔電ECサイトにおけるユーザーの個人情報の取り扱いを以下のとおり定めます。
+
+■個人情報とは
+弔電ECサイト における個人情報とは、ユーザーが弔電ECサイトを利用する際に登録する情報（以下「登録情報」といいます）及びユーザーが弔電ECサイトを利用する過程で弊社が取得する情報に含まれる氏名、住所その他の記述又は個人別に付与された番号、記号その他の符号、画像若しくは音声によりその個人を識別できるもの (この情報のみでは識別できないが、他の情報と容易に照合することができ、それにより個人を識別できるものを含みます) を言います。
+
+■個人情報の利用目的について
+弊社は、ユーザーの個人情報を、別途“博善グループ”上に掲示する プライバシーポリシーに基づき、適切に取り扱うものとし、以下の各号に定める目的に利用することができるものとします。
+・弔電ECサイト上における、弊社及び弊社の提携先や取引先等のサービス、商品等の販売、発送及びアフターサービスのご提供、ならびに新サービスの開発、実験及び検証
+・ユーザーご本人であることの確認及び与信管理（決済手段を提供する事業者に対して、個人情報を提供する場合を含みます）
+・ポータルサービスその他情報提供サービスのご提供
+・電気通信サービスのご提供
+・情報提供サービス及び電気通信サービス等の提供に係る設備の管理及び改善
+・サービス、商品等に係る売買等の取引の仲介・取次サービスのご提供
+・弊社又は弊社の提携先や取引先等の第三者の提供するサービス及び弊社又は弊社の提携先や取引先等の第三者の販売する商品その他の料金請求及び課金・決済（決済手段を提供する事業者に対して、個人情報を提供する場合を含みます）
+・弊社からユーザーに対する、弊社のサービスの利用等に関するご案内等のご連絡
+・ユーザーからのお問い合わせや苦情等への対応
+・弊社及び弊社の提携先や取引先等第三者のサービスや商品、キャンペーン等の、電話やダイレクトメールの送付、電子メールの送信等による、広告、宣伝、ご提案及びコンサルティング
+・キャンペーン、懸賞等の抽選及び賞品等の発送並びにこれに関連した応募者への連絡
+・電子メールサービスのご提供
+・アンケート調査、分析及びそれに伴う素材又は謝礼の送付
+・カスタマーサービスの向上
+・インターネットを通じた情報のご提供等、ユーザーのサポート
+・弊社が第三者から委託された業務の実施
+・その他、弊社の業務に付随する業務
+
+■個人情報の委託
+弊社は事業運営上、個人情報を含む記録及びそれに付随する業務を外部事業者に委託する場合があります。委託に際しては個人情報を適切に取り扱っていると認められる事業者を選定し、適正管理・機密保持に関する契約など漏洩防止に必要な事項を取決め、適切な管理の実施に努めます。
+
+■個人情報管理責任者について
+弊社における個人情報の管理責任者は、以下のものとします。
+株式会社コスモスターズ管理責任者：個人情報保護管理責任者
+
+■クッキーについて
+(1)弊社は、弔電ECサイトサービスを提供するためにクッキーを使用します。ユーザーが弔電ECサイト サービスを利用する際に、お使いのパソコン等の通信端末内にクッキーが記録されます。但し弊社では、クッキーをユーザーの個人情報を特定することには利用しておりません。
+
+(2)ユーザーは、弔電ECサイトサービスを利用するパソコン等の通信端末上で、クッキーを利用可能な状態に設定しておく必要性があります。またユーザーは、保存されたクッキーを書き換え、コピーし、解析する行為などを行ってはならないこととします。
+
+■個人情報の開示、訂正、利用停止等の請求に必要な手続について
+ユーザーは、弊社に登録した個人情報の開示、訂正、利用停止等を希望する場合には、別途 “博善グループ”上に掲示するプライバシーポリシーの定めに従い手続を行うものとします。
+
+■ユーザーによる登録情報の最新化について
+ユーザーは、登録情報に変更があった場合には、速やかに所定の変更の届出を、弊社に対して行うものとし、登録した情報を常に最新、完全、正確に保つものとします。
+							</textarea>
+							<div class="ud-center">
+								<input type="checkbox" name="agree" id="term_check_id" value="1" data-required="true" data-label="利用規約同意チェック">
+								<span>上記利用規約の内容に同意します。</span>
+							</div>
+						</div>
+						<div class="order-info">
+							<h2 class="sub-title">ご注文者様情報の入力</h2>
+							<div class="columns ud-center">
+								<div class="column is-4 is-full-mobile order-info-name">
+									<span>法人名・団体名:</span>
+									<span class="order-label order-label-blue">任意</span>
+								</div>
+								<div class="column is-8 is-full-mobile order-info-input">
+									<div class="field">
+										<div class="control">
+											<input type="text" name="group_name" placeholder="例:○○株式会社" class="input" value="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="columns ud-center">
+								<div class="column is-4 is-full-mobile order-info-name">
+									<span>お名前:</span>
+									<span class="order-label order-label-red">必須</span>
+								</div>
+								<div class="column is-8 is-full-mobile order-info-input">
+									<div class="field">
+										<div class="control">
+											<input type="text" name="name_sei" id="name-sei" placeholder="例：田中" data-label="姓" data-required="true" class="input order-info-input-size1" value="">
+											<input type="text" name="name_mei" id="name-mei" placeholder="例：太郎" data-label="名" data-required="true" class="input order-info-input-size2" value="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="columns ud-center">
+								<div class="column is-4 is-full-mobile order-info-name">
+									<span>フリガナ:</span>
+									<span class="order-label order-label-red">必須</span>
+								</div>
+								<div class="column is-8 is-full-mobile order-info-input">
+									<div class="field">
+										<div class="control">
+											<input type="text" name="name_sei_kana" placeholder="例：タナカ" data-label="セイ" data-required="true" class="input order-info-input-size1" value="">
+											<input type="text" name="name_mei_kana" placeholder="例：タロウ" data-label="メイ" data-required="true" class="input order-info-input-size2" value="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="columns ud-center">
+								<div class="column is-4 is-full-mobile order-info-name">
+									<span>電話番号:</span>
+									<span class="order-label order-label-red">必須</span>
+								</div>
+								<div class="column is-8 is-full-mobile order-info-input">
+									<div class="field">
+										<div class="control">
+											<input type="text" name="tel" placeholder="090xxxxxxxx" data-label="電話番号" data-required="true" class="input order-info-input-size1" value="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="columns ud-center">
+								<div class="column is-4 is-full-mobile order-info-name">
+									<span>メールアドレス:</span>
+									<span class="order-label order-label-red">必須</span>
+								</div>
+								<div class="column is-8 is-full-mobile order-info-input">
+									<div class="field">
+										<div class="control">
+											<input type="text" name="email" class="input" placeholder="xxxx@domain.com" data-label="メールアドレス" data-required="true" value="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="columns ud-center">
+								<div class="column is-4 is-full-mobile order-info-name">
+									<span>メールアドレス(確認用):</span>
+									<span class="order-label order-label-red">必須</span>
+								</div>
+								<div class="column is-8 is-full-mobile order-info-input">
+									<div class="field">
+										<div class="control">
+											<input type="text" name="re_email" placeholder="確認用に再度ご入力ください。" data-label="メールアドレス(確認用)" data-required="true" data-wb-validate="valid_same_email" class="input" value="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="columns ud-center">
+								<div class="column is-4 is-full-mobile order-info-name">
+									<span>郵便番号:</span>
+									<span class="order-label order-label-red">必須</span>
+								</div>
+								<div class="column is-8 is-full-mobile order-info-input">
+									<div class="field">
+										<div class="control">
+											<input type="text" name="zipcode" id="zipcode" placeholder="100xxxx" data-label="郵便番号" data-required="true" class="input order-info-input-size1" value="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="columns ud-center">
+								<div class="column is-4 is-full-mobile order-info-name">
+									<span>都道府県:</span>
+									<span class="order-label order-label-red">必須</span>
+								</div>
+								<div class="column is-8 is-full-mobile order-info-input">
+									<div class="field">
+										<div class="control select">
+											<select id="pref-id" name="pref_name" class="orderer-address" TABINDEX="2">
+												<option value="" disabled selected>都道府県</option>
+												<option value="北海道">北海道</option>
+												<option value="青森県">青森県</option>
+												<option value="岩手県">岩手県</option>
+												<option value="宮城県">宮城県</option>
+												<option value="秋田県">秋田県</option>
+												<option value="山形県">山形県</option>
+												<option value="福島県">福島県</option>
+												<option value="茨城県">茨城県</option>
+												<option value="栃木県">栃木県</option>
+												<option value="群馬県">群馬県</option>
+												<option value="埼玉県">埼玉県</option>
+												<option value="千葉県">千葉県</option>
+												<option value="東京都">東京都</option>
+												<option value="神奈川県">神奈川県</option>
+												<option value="新潟県">新潟県</option>
+												<option value="富山県">富山県</option>
+												<option value="石川県">石川県</option>
+												<option value="福井県">福井県</option>
+												<option value="山梨県">山梨県</option>
+												<option value="長野県">長野県</option>
+												<option value="岐阜県">岐阜県</option>
+												<option value="静岡県">静岡県</option>
+												<option value="愛知県">愛知県</option>
+												<option value="三重県">三重県</option>
+												<option value="滋賀県">滋賀県</option>
+												<option value="京都府">京都府</option>
+												<option value="大阪府">大阪府</option>
+												<option value="兵庫県">兵庫県</option>
+												<option value="奈良県">奈良県</option>
+												<option value="和歌山県">和歌山県</option>
+												<option value="鳥取県">鳥取県</option>
+												<option value="島根県">島根県</option>
+												<option value="岡山県">岡山県</option>
+												<option value="広島県">広島県</option>
+												<option value="山口県">山口県</option>
+												<option value="徳島県">徳島県</option>
+												<option value="香川県">香川県</option>
+												<option value="愛媛県">愛媛県</option>
+												<option value="高知県">高知県</option>
+												<option value="福岡県">福岡県</option>
+												<option value="佐賀県">佐賀県</option>
+												<option value="長崎県">長崎県</option>
+												<option value="熊本県">熊本県</option>
+												<option value="大分県">大分県</option>
+												<option value="宮崎県">宮崎県</option>
+												<option value="鹿児島県">鹿児島県</option>
+												<option value="沖縄県">沖縄県</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="columns ud-center">
+								<div class="column is-4 is-full-mobile order-info-name">
+									<span>住所1:</span>
+									<span class="order-label order-label-red">必須</span>
+								</div>
+								<div class="column is-8 is-full-mobile order-info-input">
+									<div class="field">
+										<div class="control">
+											<input name="address1" type="text" id="address1" placeholder="例：千代田区千代田１－１" data-label="住所1" data-required="true" class="input orderer-address" value="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="columns ud-center">
+								<div class="column is-4 is-full-mobile order-info-name">
+									<span>住所2:</span>
+									<span class="order-label order-label-blue">任意</span>
+								</div>
+								<div class="column is-8 is-full-mobile order-info-input">
+									<div class="field">
+										<div class="control">
+											<input name="address2" type="text" id="address2" placeholder="○○ビル5F" class="input orderer-address" value="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="order-message">
+							<h2 class="sub-title">メッセージ</h2>
+							<div class="columns">
+								<div class="column is-6 is-full-mobile">
+									<div>
+										<div class="order-message-name">
+											<span>受取人(喪主)</span>
+											<span class="order-label order-label-red">必須</span>
+										</div>
+										<div class="order-message-input">
+											<div class="field">
+												<div class="control">
+													<input type="text" name="recipient" placeholder="受取人（喪主名)" class="input" value="">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="order-message-name">
+											<span>メッセージ</span>
+											<span class="order-label order-label-red">必須</span>
+										</div>
+										<div class="order-message-input">
+											<div class="field">
+												<div class="control">
+													<div class="select">
+														<select id="message-select-id" name="message" class="select order-address" TABINDEX="3">
+															<optgroup label="■一般">
+																<option value="" disabled selected>プルダウンからメッセージを選択してください</option>
+																<option value="1">ご逝去の報に接し、心からお悔やみ申しあげます。</option>
+																<option value="2">ご逝去の報に接し、心から哀悼の意を捧げます。</option>
+																<option value="3">ご逝去を悼み、謹んでお悔やみ申し上げます</option>
+																<option value="4">ご逝去を悼み、謹んでお悔やみ申し上げますとともに、心からご冥福をお祈りいたします。</option>
+																<option value="5">在りし日のお姿を偲び、心からご冥福をお祈りいたします。</option>
+																<option value="6">ご生前のご功績を偲び、心からご冥福をお祈りいたします。</option>
+																<option value="7">ご生前のご厚情に深く感謝するとともに、故人のご功績を偲び、謹んで哀悼の意を表します。</option>
+																<option value="8">ご訃報に接し、心から哀悼の意を表します。安らかにご永眠されますようお祈りいたします。</option>
+																<option value="9">ご逝去を悼み、謹んでお悔やみ申しあげます。ご家族の皆様が心を合わせて、強く生きられますようお祈りいたします。</option>
+																<option value="10">ご逝去の知らせを受け、ただただ、驚いております。ご生前のお姿を偲び、心よりご冥福をお祈りいたします。</option>
+																<option value="11">いつまでも、いつまでもお元気で長生きしてくださるものと思っておりました。在りし日のお姿を偲び、心からご冥福をお祈りいたします。</option>
+															</optgroup>
+															<optgroup label="■ご尊父様">
+																<option value="12">ご尊父様のご逝去を悼み、謹んでお悔やみ申しあげます。
+																</option>
+																<option value="13">ご尊父様のご逝去の報に接し、謹んでお悔やみ申しあげますとともに、心からご冥福をお祈りいたします。
+																</option>
+															</optgroup>
+															<optgroup label="●ご母堂様">
+																<option value="14">ご母堂様のご逝去を悼み、謹んでお悔やみ申しあげます。
+																</option>
+																<option value="15">ご母堂様のご逝去の報に接し、謹んでお悔やみ申しあげますとともに、心からご冥福をお祈りいたします。
+																</option>
+															</optgroup>
+															<optgroup label="●夫">
+																<option value="16">ご主人様のご逝去を悼み、謹んでお悔やみ申しあげます。
+																</option>
+															</optgroup>
+															<optgroup label="●妻">
+																<option value="17">ご令室様のご逝去を悼み、謹んでお悔やみ申しあげます。
+																</option>
+															</optgroup>
+															<optgroup label="●ご子息様">
+																<option value="18">ご子息様のご逝去を悼み、謹んでお悔やみ申しあげます。
+																</option>
+															</optgroup>
+															<optgroup label="●ご令嬢様">
+																<option value="19">ご令嬢様のご逝去を悼み、謹んでお悔やみ申しあげます。
+																</option>
+															</optgroup>
+															<optgroup label="●お孫様">
+																<option value="20">お孫さまのご急逝の報に接し、謹んでお悔やみ申しあげます。
+																</option>
+															</optgroup>
+															<optgroup label="●弔問欠席">
+																<option value="21">お悲しみに対し弔問かなわぬ非礼をおわびし、謹んで哀悼の意を表します。
+																</option>
+															</optgroup>
+															<optgroup label="●企業向け">
+																<option value="22">ご訃報に接し、ご生前のご功績を偲び、心からご冥福をお祈りいたします。</option>
+																<option value="23">ご逝去の報に接し、御社ご一同様に衷心より哀悼の意を表します。</option>
+																<option value="24">ご訃報に、弊社社員一同、謹んで哀悼の意を表します。ご遺族の皆様ならびに社員ご一同様に、心からお悔やみ申しあげます。</option>
+															</optgroup>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div>
+											<div class="order-message-name">
+												<span>差出人住所</span>
+												<span class="order-label order-label-red">必須</span>
+											</div>
+											<div class="order-message-input">
+												<div class="field">
+													<div class="control">
+														<span class="radio"><input type="radio" class="seibetu" name="seibetu" value="" checked="checked"></span>
+														<span>ご注文者様と同じ住所を入力する</span>
+													</div>
+													<div class="control">
+														<span class="radio"><input type="radio" class="seibetu" name="seibetu" value="1"></span>
+														<span>ご注文者様と違う住所を入力する</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div>
+											<div class="order-message-name">
+												<span>差出人住所</span>
+												<span class="order-label order-label-red">必須</span>
+											</div>
+											<div class="order-message-input">
+												<div class="field">
+													<div class="control">
+														<input type="text" name="sender_address" id="sender-address" placeholder="例：千代田区千代田１－１" data-label="差出人名1" data-label="差出人住所" data-required="true" class="input" value="">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div>
+											<div class="order-message-name">
+												<span>法人名・団体名・役職名</span>
+												<span class="order-label order-label-red">必須</span>
+											</div>
+											<div class="order-message-input">
+												<div class="field">
+													<div class="control">
+														<input type="text" name="position1" placeholder="例：株式会社○○　代表取締役" value="" class="input">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div>
+											<div class="order-message-name">
+												<span>差出人選択</span>
+												<span class="order-label order-label-red">必須</span>
+											</div>
+											<div class="order-message-input">
+												<div class="field">
+													<div class="control">
+														<span class="radio"><input type="radio" class="message-sender-name-select" name="sender_name_select" value="" checked="checked"></span>
+														<span>ご注文者様と同じ名前を入力する</span>
+													</div>
+													<div class="control">
+														<span class="radio"><input type="radio" class="message-sender-name-select" name="sender_name_select" value="1"></span>
+														<span>ご注文者様と違う名前を入力する</span>
+													</div>
+												</div>
+											</div>
+											<div>
+												<div class="order-message-name">
+													<span>差出人名1</span>
+													<span class="order-label order-label-red">必須</span>
+												</div>
+												<div class="order-message-input">
+													<div class="field">
+														<div class="control">
+															<input type="text" id="sender-name1" name="sender_name1" placeholder="例：田中太郎" data-label="差出人名1" data-required="true" class="input" value="">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div id="accordion-button" class="accordion-toggle">
+												<p id="open-in" class="open">
+													<span class="icon">
+														<i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+													</span>
+													<span>連名者を追加</span>
+												</p>
+												<p id="close-out" class="close">
+													<span class="icon">
+														<i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+													</span>
+													<span>連名者を追加</span>
+												</p>
+											</div>
+											<div id="accordion-target" class="accordion-target">
+												<div>
+													<div class="order-message-name">
+														<span>法人名・団体名 役職名2</span>
+														<span class="order-label order-label-red">必須</span>
+													</div>
+													<div class="order-message-input">
+														<div class="field">
+															<div class="control">
+																<input type="text" id="position2" name="position2" placeholder="例：株式会社○○　専務取締役" class="input" value="">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div>
+													<div class="order-message-name">
+														<span>差出人名2</span>
+														<span class="order-label order-label-red">必須</span>
+													</div>
+													<div class="order-message-input">
+														<div class="field">
+															<div class="control">
+																<input type="text" id="sender-name2" name="sender_name2" placeholder="例：山田花子" data-label="差出人名1" data-required="true" class="input" value="">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div>
+													<div class="order-message-name">
+														<span>法人名・団体名 役職名3</span>
+														<span class="order-label order-label-red">必須</span>
+													</div>
+													<div class="order-message-input">
+														<div class="field">
+															<div class="control">
+																<input type="text" id="position3" name="position3" placeholder="例：株式会社○○　営業部長" data-label="差出人名1" data-required="true" class="input" value="">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div>
+													<div class="order-message-name">
+														<span>差出人名3</span>
+														<span class="order-label order-label-red">必須</span>
+													</div>
+													<div class="order-message-input">
+														<div class="field">
+															<div class="control">
+																<input type="text" id="sender-name3" name="sender_name3" placeholder="例：鈴木一郎" data-label="差出人名1" data-required="true" class="input" value="">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="column is-6 is-full-mobile order-message-layout">
+									<h3 class="order-message-layout-title">弔電のレイアウトイメージ</h3>
+									<div class="order-message-layout-block">
+										<div id="layout-recipient"    class="order-message-layout-block-line-1">苗字 名前</div>
+										<div id="layout-message"      class="order-message-layout-block-line-2"></div>
+										<div id="layout-address"      class="order-message-layout-block-line-3">住所</div>
+										<div id="layout-position1"    class="order-message-layout-block-line-3">役職１</div>
+										<div id="layout-sender-name1" class="order-message-layout-block-line-3">差出人１</div>
+										<div id="layout-position2"    class="order-message-layout-block-line-3">役職２</div>
+										<div id="layout-sender-name2" class="order-message-layout-block-line-3">差出人２</div>
+										<div id="layout-position3"    class="order-message-layout-block-line-3">役職３</div>
+										<div id="layout-sender-name3" class="order-message-layout-block-line-3">差出人３</div>
+									</div>
+									<p class="order-message-layout-caution">※入力文字数が多い場合は、すべての文字がイメージに表示されない場合があります。<br>※レイアウトイメージは、実際の印刷と配置やフォント等が異なる場合があります。</p>
+								</div>
+							</div>
+						</div>
+						<!--
+						<div class="columns ssl">
+							<div class="column is-3">
+								<span id="ss_gmo_img_wrapper_130-66_image_ja"><a href="https://jp.globalsign.com/" target="_blank" rel="nofollow"><img alt="SSL GMOグローバルサインのサイトシール" id="ss_img" src="//seal.globalsign.com/SiteSeal/images/gs_noscript_130-66_ja.gif" class="img-responsive center-block pl-80 s-pl-0"></a></span>
+								<script type="text/javascript" src="//seal.globalsign.com/SiteSeal/gmogs_image_130-66_ja.js" defer="defer"></script>
+							</div>
+							<div class="column is-9">
+								<p>※このページでは、、お客様の個人情報を安全に送受信するためにSSL暗号化通信を利用し、第三者によるデータの改ざんや盗用を防いでいます</p>
+							</div>
+						</div>
+						 -->
+						 <div class="button-adjust">
+						 	<button type="submit" name="next" class="button button1" TABINDEX="4" ACCESSKEY="f" >決済情報の入力へ進む</button>
+						</div>
+					</form>
+				</div>
+				<!-- ページトップへ戻るボタン -->
+				<a href="#" id="page-top" class="page-top ud-center"><img src="img/page_top_logo.png" alt="ページトップへ戻る"></a>
+			</section>
+			<footer class="footer">
+				<p class="footer-company">株式会社 コスモスターズ</p>
+				<p class="footer-address">〒170-0013  東京都豊島区東池袋2-39-2</p>
+				<p class="footer-tel">TEL03-3982-6226</p>
+			</footer>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+$main-color :#08d;
+$main-font-color :#ffffff;
+$sub-color :#eee;
+$danger-color :#d9534f;
+$label-color :#d9534f;
+
+$weight-right : 400;
+$weight-medium: 500;
+$weight-bold  : 600;
+
+$page-size-full   :870px;
+$page-size-medium :670px;
+$page-size-small  :450px;
+
+$page-size-full   :870px;
+$page-size-medium :670px;
+$page-size-small  :450px;
+
+$size-h1: 1.875rem;
+$size-h2: 1.5rem;
+
+.wrapper{
+	position: relative;
+}
+
+.page-title{
+	background-color: $main-color;
+	color: $main-font-color;
+	text-align: center;
+	h1{
+		font-size: $size-h1;
+	}
+	p{
+		
+		}
+}
+
+.section-title{
+	border-left : 10px solid $main-color;
+	h2{
+		font-size: $size-h2;
+	}
+}
+
+.btn{
+	width: 100%;
+	.btn-main{
+		background-color: $main-color;
+		color: $main-font-color;
+		&:hover{
+			opacity: 0.6;
+		}
+	}
+	.btn-sub{
+		background-color: $sub-color;
+		color: $main-color;
+		&:hover{
+			opacity: 0.6;
+		}
+	}
+}
+
+.header{
+	height: 80px;
+	margin-bottom: 15px;
+}
+
+.footer{
+	text-align: center;
+	.company{
+	}
+	.copyright{
+
+	}
+}

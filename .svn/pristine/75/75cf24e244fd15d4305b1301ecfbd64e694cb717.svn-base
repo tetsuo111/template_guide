@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+		<meta name="format-detection" content="telephone=no,email=no,address=no">
+		<title>注文確認｜コスモスターズ</title>
+		<link rel="stylesheet" href="css/bulma.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="js/jquery.slim.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<a href="http://www.cosmostars.co.jp/index.html" class="header-link"></a>
+			</header>
+			<section class="main">
+				<div class="main-title has-text-centered">
+					<h1>田中太郎様のお葬儀</h1>
+					<p>
+						<span class="main-title-sub-text">葬儀時間:<span>17:00</span>開始　</span>
+						<span class="main-title-sub-text">ホール名:<span>ハクゼンホール安茂里会館</span></span>
+					</p>
+				</div>
+				<div class="progressbar">
+					<div class="columns is-flex">
+						<div class="column is-3-desktop is-3-mobile  progress-current ud-center">ご注文情報の入力</div>
+						<div class="column is-3-desktop is-3-mobile  progress-outside ud-center">決済情報の入力</div>
+						<div class="column is-3-desktop is-3-mobile  progress-outside ud-center">入力確認画面</div>
+						<div class="column is-3-desktop is-3-mobile  progress-outside ud-center">完了</div>
+					</div>
+				</div>
+				<div>
+					<div class="order-confirm">
+						<h2 class="sub-title">商品情報の確認</h2>
+						<table class="table is-bordered">
+					 		<tr>
+					 			<td class="order-confirm-td-width order-confirm-td-bg">商品画像</td>
+					 			<td class="order-confirm-td-bg">商品名</td>
+					 		</tr>
+					 		<tr>
+					 			<td rowspan="3"><img alt="商品画像" src="img/haruka3.jpg" class="order-confirm-image-td-img"></td>
+					 			<td class="order-confirm-td-detail">弔</td>
+					 		</tr>
+					 		<tr class="order-confirm-trh-adj">
+					 			<td class="order-confirm-td-bg">価格</td>
+					 		</tr>
+					 		<tr>
+					 			<td class="order-confirm-td-detail">1,500円</td>
+					 		</tr>
+					 		<tr>
+					 			<td colspan="2" class="order-confirm-caution">
+					 				<p class="has-text-left">上記価格は、台紙代＋お届け料となります。</p>
+					 				<p class="has-text-left">サービスの性質上、キャンセルは葬儀の2時間前までとさせて頂きます。</p>
+					 			</td>
+					 		</tr>
+						</table>
+					</div>
+					<div class="input-confirm">
+						<h2 class="sub-title">商品情報の確認</h2>
+						<div class="columns ud-center">
+							<div class="column is-4 is-full-mobile payment-name">
+								<span>法人名・団体名:</span>
+							</div>
+							<div class="column is-8 is-full-mobile payment-input">
+								<span></span>
+							</div>
+						</div>
+						<div class="columns ud-center">
+							<div class="column is-4 is-full-mobile payment-name">
+								<span>お名前:</span>
+							</div>
+							<div class="column is-8 is-full-mobile payment-input">
+								<span></span>
+							</div>
+						</div>
+						<div class="columns ud-center">
+							<div class="column is-4 is-full-mobile payment-name">
+								<span>フリガナ:</span>
+							</div>
+							<div class="column is-8 is-full-mobile payment-input">
+								<span></span>
+							</div>
+						</div>
+						<div class="columns ud-center">
+							<div class="column is-4 is-full-mobile payment-name">
+								<span>電話番号:</span>
+							</div>
+							<div class="column is-8 is-full-mobile payment-input">
+								<span></span>
+							</div>
+						</div>
+						<div class="columns ud-center">
+							<div class="column is-4 is-full-mobile payment-name">
+								<span>メールアドレス:</span>
+							</div>
+							<div class="column is-8 is-full-mobile payment-input">
+								<span></span>
+							</div>
+						</div>
+						<div class="columns ud-center">
+							<div class="column is-4 is-full-mobile payment-name">
+								<span>郵便番号:</span>
+							</div>
+							<div class="column is-8 is-full-mobile payment-input">
+								<span></span>
+							</div>
+						</div>
+						<div class="columns ud-center">
+							<div class="column is-4 is-full-mobile payment-name">
+								<span>都道府県:</span>
+							</div>
+							<div class="column is-8 is-full-mobile payment-input">
+								<span></span>
+							</div>
+						</div>
+						<div class="columns ud-center">
+							<div class="column is-4 is-full-mobile payment-name">
+								<span>住所1:</span>
+							</div>
+							<div class="column is-8 is-full-mobile payment-input">
+								<span></span>
+							</div>
+						</div>
+						<div class="columns ud-center">
+							<div class="column is-4 is-full-mobile payment-name">
+								<span>住所2:</span>
+							</div>
+							<div class="column is-8 is-full-mobile payment-input">
+								<span></span>
+							</div>
+						</div>
+					</div>
+					<div class="input-confirm">
+						<h2 class="sub-title">メッセージの確認</h2>
+						<div class="columns ud-center">
+							<div class="column is-4 is-full-mobile payment-name">
+								<span>受取人(喪主):</span>
+							</div>
+							<div class="column is-8 is-full-mobile payment-input">
+								<span></span>
+							</div>
+						</div>
+						<div class="columns ud-center">
+							<div class="column is-4 is-full-mobile payment-name">
+								<span>メッセージ:</span>
+							</div>
+							<div class="column is-8 is-full-mobile payment-input">
+								<span></span>
+							</div>
+						</div>
+						<div class="columns ud-center">
+							<div class="column is-4 is-full-mobile payment-name">
+								<span>差出人住所:</span>
+							</div>
+							<div class="column is-8 is-full-mobile payment-input">
+								<span></span>
+							</div>
+						</div>
+						<div class="columns ud-center">
+							<div class="column is-4 is-full-mobile payment-name">
+								<span>法人名・団体名 役職名1:</span>
+							</div>
+							<div class="column is-8 is-full-mobile payment-input">
+								<span></span>
+							</div>
+						</div>
+						<div class="columns ud-center">
+							<div class="column is-4 is-full-mobile payment-name">
+								<span>差出人名1:</span>
+							</div>
+							<div class="column is-8 is-full-mobile payment-input">
+								<span></span>
+							</div>
+						</div>
+						<div class="columns ud-center">
+							<div class="column is-4 is-full-mobile payment-name">
+								<span>法人名・団体名 役職名2:</span>
+							</div>
+							<div class="column is-8 is-full-mobile payment-input">
+								<span></span>
+							</div>
+						</div>
+						<div class="columns ud-center">
+							<div class="column is-4 is-full-mobile payment-name">
+								<span>差出人名2:</span>
+							</div>
+							<div class="column is-8 is-full-mobile payment-input">
+								<span></span>
+							</div>
+						</div>
+						<div class="columns ud-center">
+							<div class="column is-4 is-full-mobile payment-name">
+								<span>法人名・団体名 役職名3:</span>
+							</div>
+							<div class="column is-8 is-full-mobile payment-input">
+								<span></span>
+							</div>
+						</div>
+						<div class="columns ud-center">
+							<div class="column is-4 is-full-mobile payment-name">
+								<span>差出人名3:</span>
+							</div>
+							<div class="column is-8 is-full-mobile payment-input">
+								<span></span>
+							</div>
+						</div>
+						<div class="columns ud-center">
+							<div class="column is-4 is-full-mobile payment-name">
+								<span>レイアウト:</span>
+							</div>
+							<div class="column is-8 is-full-mobile payment-input">
+								<div class="layout">
+									<p></p>
+									<p></p>
+									<p></p>
+									<p></p>
+									<p></p>
+									<p></p>
+									<p></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="input-confirm">
+						<h2 class="sub-title">商品情報の確認</h2>
+						<div class="columns ud-center">
+							<div class="column is-4 is-full-mobile payment-name">
+								<span>総額(税込):</span>
+							</div>
+							<div class="column is-8 is-full-mobile payment-input">
+								<span></span>
+							</div>
+						</div>
+						<div class="columns ud-center">
+							<div class="column is-4 is-full-mobile payment-name">
+								<span>カード番号:</span>
+							</div>
+							<div class="column is-8 is-full-mobile payment-input">
+								<span></span>
+							</div>
+						</div>
+						<div class="columns ud-center">
+							<div class="column is-4 is-full-mobile payment-name">
+								<span>有効期限(月/年):</span>
+							</div>
+							<div class="column is-8 is-full-mobile payment-input">
+								<span></span>
+							</div>
+						</div>
+					</div>
+					<form action="post">
+						 <div class="button-adjust">
+						 	<button type="submit" name="next" class="button button1" TABINDEX="4" ACCESSKEY="f">決済情報の入力へ進む</button>
+						 	<button type="submit" name="return" class="button button2" TABINDEX="5" ACCESSKEY="f">商品選択画面に戻る</button>
+						</div>
+					</form>
+				</div>
+				<!-- ページトップへ戻るボタン -->
+				<a href="#" id="page-top" class="page-top ud-center"><img src="img/page_top_logo.png" alt="ページトップへ戻る"></a>
+			</section>
+			<footer class="footer">
+				<p class="footer-company">株式会社 コスモスターズ</p>
+				<p class="footer-address">〒170-0013  東京都豊島区東池袋2-39-2</p>
+				<p class="footer-tel">TEL03-3982-6226</p>
+			</footer>
+		</div>
+	</body>
+</html>

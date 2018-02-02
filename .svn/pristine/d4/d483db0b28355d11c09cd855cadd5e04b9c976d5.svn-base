@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+		<meta name="format-detection" content="telephone=no,email=no,address=no">
+		<title>葬儀一覧｜コスモスターズ</title>
+		<link rel="stylesheet" href="css/bulma.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="js/jquery.slim.min.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/js-item.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<a href="http://www.cosmostars.co.jp/index.html" class="header-link"></a>
+			</header>
+			<section class="main">
+				<div class="main-title has-text-centered">
+					<h1>田中太郎様のお葬儀</h1>
+					<p>
+						<span class="main-title-text">葬儀時間:<span>17:00</span>開始　</span>
+						<span class="main-title-text">ホール名:<span>ハクゼンホール安茂里会館</span></span>
+					</p>
+				</div>
+				<div class="item">
+					<h2 class="sub-title">商品一覧</h2>
+					<div class="columns">
+						<div class="column is-full-mobile is-4-desktop">
+							<figure class="has-text-centered">
+								<img alt="弔電色紙" src="img/tomurai_main.jpg" class="item-image">
+							</figure>
+							<table class="table">
+								<tbody>
+									<tr>
+										<th class="item-price">商品名</th>
+										<th class="item-title">価格(税込み)</th>
+									</tr>
+									<tr>
+										<td class="has-text-centered">遥</td>
+										<td class="has-text-centered">2200円</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="has-text-centered item-detail-btn-block">
+								<a id="button-modal" class="button button2" data-target="#modal">詳細を見る</a>
+							</div>
+							<!-- モーダルスタート -->
+							<div id="modal" class="modal">
+								<div class="modal-background"></div>
+								<div class="modal-content box ">
+									<header>
+										<h1 class="sub-title">遥</h1>
+									</header>
+									<div class="columns is-vcentered">
+										<div id="modal-image-block" class="column is-6 is-12-mobile">
+											<figure class="has-text-centered modal-big-image">
+												<img src="img/haruka3.jpg" alt="遥" class="modal-image">
+											</figure>
+											<div class="columns ud-center">
+												<figure class="column is-6-desktop is-6-mobile has-text-centered">
+													<a><img src="img/haruka3.jpg" class="modal-image" alt="遥_表"></a>
+												</figure>
+												<figure class="column is-6-desktop is-6-mobile has-text-centered">
+													<a><img src="img/haruka_open.jpg" class="modal-image" alt="遥_開き"></a>
+												</figure>
+											</div>
+										</div>
+										<div class="is-6 is-12-mobile modal-detail">
+											<div>
+												<h2 class="modal-sub-title">価格(税込み)</h2>
+												<p class="modal-detail-text">2,200円</p>
+											</div>
+											<div>
+												<h2 class="modal-sub-title">商品説明</h2>
+												<p class="modal-detail-text">フューネラルフラワーとお悔み電報のセットです。
+												フューネラルフラワーとお悔み電報のセットです。 フューネラルフラワーとお悔み電報のセットです。</p>
+											</div>
+											<div>
+												<h2 class="modal-sub-title">ご注意事項</h2>
+												<ul class="modal-detail-text">
+													<li>上記価格は、台紙代＋お届け料となります。</li>
+													<li>サービスの性質上、キャンセルは葬儀の2時間前までとさせて頂きます。</li>
+													<li>商品については、品切れまたは予告なく変更する場合がございますのでご了承ください。</li>
+													<li>本商品は実物と若干異なる場合があります。</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<footer class="modal-footer">
+										<div class="has-text-centered modal-footer-close">
+											<button id="button-modal-close" class="button button2" TABINDEX="">閉じる</button>
+										</div>
+									</footer>
+								</div>
+							</div>
+							<!-- モーダル ここまで -->
+							<form action="order.html">
+								<div class="field has-text-centered item-form">
+									<button class="button button1">この商品を選ぶ</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer class="footer">
+				<p class="footer-company">株式会社 コスモスターズ</p>
+				<p class="footer-address">〒170-0013  東京都豊島区東池袋2-39-2</p>
+				<p class="footer-tel">TEL03-3982-6226</p>
+			</footer>
+		</div>
+	</body>
+</html>

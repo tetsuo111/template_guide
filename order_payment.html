@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+		<meta name="format-detection" content="telephone=no,email=no,address=no">
+		<title>支払い入力｜コスモスターズ</title>
+		<link rel="stylesheet" href="css/bulma.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="js/jquery.slim.min.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<a href="http://www.cosmostars.co.jp/index.html" class="header-link"></a>
+			</header>
+			<section class="main">
+				<div class="main-title has-text-centered">
+					<h1>田中太郎様のお葬儀</h1>
+					<p>
+						<span class="main-title-sub-text">葬儀時間:<span>17:00</span>開始　</span>
+						<span class="main-title-sub-text">ホール名:<span>ハクゼンホール安茂里会館</span></span>
+					</p>
+				</div>
+				<div class="progressbar">
+					<div class="columns is-flex">
+						<div class="column is-3-desktop is-3-mobile  progress-current ud-center">ご注文情報の入力</div>
+						<div class="column is-3-desktop is-3-mobile  progress-outside ud-center">決済情報の入力</div>
+						<div class="column is-3-desktop is-3-mobile  progress-outside ud-center">入力確認画面</div>
+						<div class="column is-3-desktop is-3-mobile  progress-outside ud-center">完了</div>
+					</div>
+				</div>
+				<div class="payment">
+					<form>
+						<h2 class="sub-title">クレジットカード情報の入力</h2>
+						<div class="columns ud-center">
+							<div class="column is-4 is-full-mobile payment-name">
+								<span>総額(税込):</span>
+							</div>
+							<div class="column is-8 is-full-mobile payment-input">
+								<span>1,500</span>円
+							</div>
+						</div>
+						<div class="columns ud-center">
+							<div class="column is-4 is-full-mobile payment-name">
+								<span>カード番号(半角英数字のみ):</span>
+							</div>
+							<div class="column is-8 is-full-mobile payment-input">
+								<div class="field">
+									<div class="control">
+										<input type="text" name="000000000000" class="input" value="" placeholder="0000000000000">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="columns ud-center">
+							<div class="column is-4 is-full-mobile payment-name">
+								<span>有効期限(月/年):</span>
+							</div>
+							<div class="column is-8 is-full-mobile payment-input">
+								<div class="field">
+									<div class="control select">
+										<select name="cc_exp_month" data-label="有効期限(月)" data-required="true">
+											<option value="1">01</option>
+											<option value="2">02</option>
+											<option value="3">03</option>
+											<option value="4">04</option>
+											<option value="5">05</option>
+											<option value="6">06</option>
+											<option value="7">07</option>
+											<option value="8">08</option>
+											<option value="9">09</option>
+											<option value="10">10</option>
+											<option value="11">11</option>
+											<option value="12">12</option>
+										</select>
+									</div>
+									<div class="control select">
+										<select name="cc_exp_year"  data-label="有効期限(年)" data-required="true">
+											<option value="17">17</option>
+											<option value="18">18</option>
+											<option value="19">19</option>
+											<option value="20">20</option>
+											<option value="21">21</option>
+											<option value="22">22</option>
+											<option value="35">35</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="columns ud-center">
+							<div class="column is-4 is-full-mobile payment-name">
+								<span>セキュリティコード:</span>
+								<p>
+									<a id="button-modal" class="modal-start" data-target="#modal">
+										<span class="icon">
+											<i class="fa fa-question-circle" aria-hidden="true"></i>
+										</span>
+										セキュリティコードについて
+									</a>
+								</p>
+								<!-- モーダルスタート -->
+								<div id="modal" class="modal security" >
+									<div class="modal-background"></div>
+									<div class="modal-content box">
+										<header class="modal-header">
+											<h1 class="sub-title">セキュリティコードとは</h1>
+										</header>
+										<div class="modal-body">
+											<p>クレジットカード番号とは別に印字されている数字で、カードの利用明細等には印字されません。セキュリティコードをご利用いただくことにより、インターネットショッピングの際のセキュリティが向上します。</p>
+											<div class="columns ud-center">
+												<div class="column is-6 is-12-mobile">
+													<figure></figure>
+													<p>AMERICAN EXPRESSは表にセキュリティコードが記載されています。</p>
+												</div>
+												<div class="column is-6 is-12-mobile">
+													<figure></figure>
+													<p>VISA、MasterCard、JCB、Dinersは裏にセキュリティコードが記載されています。</p>
+												</div>
+											</div>
+										</div>
+										<footer class="modal-footer">
+											<div class="has-text-centered modal-footer-close">
+												<button id="button-modal-close" class="button button2" TABINDEX="">閉じる</button>
+											</div>
+										</footer>
+									</div>
+								</div>
+								<!-- モーダル ここまで -->
+							</div>
+							<div class="column is-8 is-full-mobile payment-input">
+								<div class="field">
+									<div class="control">
+										<input type="text" name="000" class="input" placeholder="000">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="credit">
+							<h3>ご利用可能なクレジットカード</h3>
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+							<p>支払い区分は一括払いのみとなります。ご請求時期についてはご利用の各カード会社にお問い合わせください。お客様のクレジットカード番号はSSL通信により暗号化され、カード会社に安全に送信されます。</p>
+						</div>
+						<div class="recipt">
+							<h3>受領確認書について</h3>
+							<p>本サイトの注文システムでは領収書を発行しておりません。 経費のご申請等で注文内容の証明する際は、注文確認メールをご利用ください。 なお、お支払状況はご契約のクレジットカード会社の明細書をご確認ください。</p>
+						</div>
+						<!--
+						<div class="columns ssl">
+							<div class="column is-3">
+								<span id="ss_gmo_img_wrapper_130-66_image_ja"><a href="https://jp.globalsign.com/" target="_blank" rel="nofollow"><img alt="SSL GMOグローバルサインのサイトシール" id="ss_img" src="//seal.globalsign.com/SiteSeal/images/gs_noscript_130-66_ja.gif" class="img-responsive center-block pl-80 s-pl-0"></a></span>
+								<script type="text/javascript" src="//seal.globalsign.com/SiteSeal/gmogs_image_130-66_ja.js" defer="defer"></script>
+							</div>
+							<div class="column is-9">
+								<p>※このページでは、、お客様の個人情報を安全に送受信するためにSSL暗号化通信を利用し、第三者によるデータの改ざんや盗用を防いでいます</p>
+							</div>
+						</div>
+						 -->
+						 <div class="button-adjust">
+						 	<button type="submit" name="next" class="button button1" TABINDEX="4" ACCESSKEY="f">決済情報の入力へ進む</button>
+						 	<button type="submit" name="return" class="button button2" TABINDEX="5" ACCESSKEY="f">商品選択画面に戻る</button>
+						</div>
+					</form>
+				</div>
+				<!-- ページトップへ戻るボタン -->
+				<a href="#" id="page-top" class="page-top ud-center"><img src="img/page_top_logo.png" alt="ページトップへ戻る"></a>
+			</section>
+			<footer class="footer">
+				<p class="footer-company">株式会社 コスモスターズ</p>
+				<p class="footer-address">〒170-0013  東京都E豊島区東池袋2-39-2</p>
+				<p class="footer-tel">TEL03-3982-6226</p>
+			</footer>
+		</div>
+	</body>
+</html>
