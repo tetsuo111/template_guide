@@ -21,6 +21,9 @@ $page-size-small  :450px;
 $size-h1: 1.875rem;
 $size-h2: 1.5rem;
 
+$left: left;
+$right: right;
+
 .wrapper{
 	position: relative;
 }
@@ -33,12 +36,14 @@ $size-h2: 1.5rem;
 		font-size: $size-h1;
 	}
 	p{
-		
 		}
 }
 
 .section-title{
 	border-left : 10px solid $main-color;
+	height: 50px;
+	padding: 8px 0 0 20px;
+	text-align: $left;
 	h2{
 		font-size: $size-h2;
 	}
@@ -69,6 +74,8 @@ $size-h2: 1.5rem;
 
 .footer{
 	text-align: center;
+	backgournd-color: $main-color;
+	color: $main-font-color;
 	.company{
 	}
 	.copyright{
