@@ -1,41 +1,151 @@
-.wrapper {
-  position: relative; }
+@charset "UTF-8";
+/*####################################################################
+ *### 基本
+ *####################################################################*/
+/*--------------------------------------------------------------------
+ *-
+ *--------------------------------------------------------------------*/
+/*####################################################################
+ *### 一括
+ *####################################################################*/
+.container {
+  margin-bottom: 30px;
+}
 
+/*####################################################################
+ *### パーツ
+ *####################################################################*/
+/*====================================================================
+ *= ページタイトル
+ *====================================================================*/
 .page-title {
+  margin-bottom: 30px;
   background-color: #08d;
   color: #ffffff;
-  text-align: center; }
-.page-title h1 {
-  font-size: 1.875rem; }
+  text-align: center;
+  font-size: 1.875rem;
+}
+.page-title .page-title-in-text {
+  font-size: 1rem;
+}
 
+/*====================================================================
+ *= セクションタイトル
+ *====================================================================*/
 .section-title {
+  margin-bottom: 30px;
   border-left: 10px solid #08d;
   height: 50px;
-  padding: 13px 0 0 20px;
-  text-align: left; }
-.section-title h2 {
-  font-size: 1.5rem; }
+  padding: 8px 0 0 20px;
+  text-align: left;
+  font-size: 1.5rem;
+}
 
-.btn {
-  width: 100%; }
-.btn .btn-main {
+/*====================================================================
+ *= 各種テキスト
+ *====================================================================*/
+.error-text {
+  color: #d9534f;
+  margin-bottom: 30px;
+}
+
+/*====================================================================
+ *= ボタン
+ *====================================================================*/
+.button.button-main {
   background-color: #08d;
-  color: #ffffff; }
-.btn .btn-main:hover {
-  opacity: 0.6; }
-.btn .btn-sub {
+  color: #ffffff;
+}
+.button.button-main:hover {
+  opacity: 0.6;
+}
+.button.button-sub {
   background-color: #eee;
-  color: #08d; }
-.btn .btn-sub:hover {
-  opacity: 0.6; }
+  color: #08d;
+}
+.button.button-sub:hover {
+  opacity: 0.6;
+}
 
+/*####################################################################
+ *### ブロック
+ *####################################################################*/
+/*====================================================================
+ *= ページラッパー
+ *====================================================================*/
+.page-wrapper {
+  position: relative;
+}
+
+/*====================================================================
+ *= ヘッダー
+ *====================================================================*/
 .header {
   height: 80px;
-  margin-bottom: 15px; }
+}
 
+/*====================================================================
+ *= フッター
+ *====================================================================*/
 .footer {
   text-align: center;
-  backgournd-color: #08d;
-  color: #ffffff; }
+  background-color: #08d;
+  color: #ffffff;
+  padding: 1rem;
+}
+.footer .footer-info .footer-info-company {
+  font-size: 1.5rem;
+}
+
+/*====================================================================
+ *= ホール情報
+ *====================================================================*/
+.hall-info .hall-info-image {
+  text-align: center;
+}
+.hall-info .hall-info-title {
+  height: 50px;
+  background-color: #eee;
+  border: 1px solid #ddd;
+}
+
+/*====================================================================
+ *= ホールリスト
+ *====================================================================*/
+.hall-list {
+  background-color: #eee;
+  border: 1px solid #ddd;
+  border-bottom: none;
+}
+.hall-list:hover {
+  opacity: 0.6;
+  background-color: #08d;
+}
+.hall-list .hall-list-link {
+  display: block;
+  font-size: 1rem;
+  color: #000000;
+  padding: 8px 12px;
+}
+.hall-list .hall-list-link:hover {
+  color: #ffffff;
+}
+
+/*====================================================================
+ *= 葬儀情報
+ *====================================================================*/
+.funeral-info {
+  background-color: #eee;
+}
+.funeral-info .funeral-info-list {
+  background-color: #eee;
+}
+.funeral-info .funeral-info-list .funeral-info-list-name {
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+.funeral-info .funeral-info-button {
+  background-color: #eee;
+}
 
 /*# sourceMappingURL=style.css.map */

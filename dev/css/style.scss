@@ -1,18 +1,22 @@
 @charset "UTF-8";
 
+$breakpoint-sm: 400px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1000px;
+
 $main-color :#08d;
 $main-font-color :#ffffff;
 $sub-color :#eee;
+$sub-bd-color: #ddd;
 $danger-color :#d9534f;
 $label-color :#d9534f;
+$base-color: #000000;
 
-$weight-right : 400;
+$weight-light: 300;
+$weight-normal: 400 ;
 $weight-medium: 500;
-$weight-bold  : 600;
-
-$page-size-full   :870px;
-$page-size-medium :670px;
-$page-size-small  :450px;
+$weight-semibold: 600;
+$weight-bold: 700;
 
 $page-size-full   :870px;
 $page-size-medium :670px;
@@ -20,65 +24,189 @@ $page-size-small  :450px;
 
 $size-h1: 1.875rem;
 $size-h2: 1.5rem;
+$size-font-base: 1rem;
+$size-font-2: 1.125rem;
 
 $left: left;
 $right: right;
+$center: center;
 
-.wrapper{
-	position: relative;
+$none: none;
+
+$base-opacity: 0.6;
+
+
+@mixin base-interval($bottom){
+	margin-bottom: $bottom;
+	@content;
 }
 
+/*####################################################################
+ *### 基本
+ *####################################################################*/
+
+/*--------------------------------------------------------------------
+ *-
+ *--------------------------------------------------------------------*/
+
+/*####################################################################
+ *### 一括
+ *####################################################################*/
+
+.container{
+	@include base-interval(30px);
+}
+
+/*####################################################################
+ *### パーツ
+ *####################################################################*/
+
+/*====================================================================
+ *= ページタイトル
+ *====================================================================*/
+
 .page-title{
+	@include base-interval(30px);
 	background-color: $main-color;
 	color: $main-font-color;
 	text-align: center;
-	h1{
-		font-size: $size-h1;
+	font-size: $size-h1;
+	.page-title-in-text{
+		font-size: $size-font-base;
 	}
-	p{
-		}
 }
 
+/*====================================================================
+ *= セクションタイトル
+ *====================================================================*/
+
 .section-title{
+	@include base-interval(30px);
 	border-left : 10px solid $main-color;
 	height: 50px;
 	padding: 8px 0 0 20px;
 	text-align: $left;
-	h2{
-		font-size: $size-h2;
-	}
+	font-size: $size-h2;
 }
 
-.btn{
-	width: 100%;
-	.btn-main{
+/*====================================================================
+ *= 各種テキスト
+ *====================================================================*/
+.error-text{
+	color: $danger-color;
+}
+
+/*====================================================================
+ *= ボタン
+ *====================================================================*/
+
+.button{
+	&.button-main{
 		background-color: $main-color;
 		color: $main-font-color;
 		&:hover{
-			opacity: 0.6;
+			opacity: $base-opacity;
 		}
 	}
-	.btn-sub{
+	&.button-sub{
 		background-color: $sub-color;
 		color: $main-color;
 		&:hover{
-			opacity: 0.6;
+			opacity: $base-opacity;
 		}
 	}
 }
 
-.header{
-	height: 80px;
-	margin-bottom: 15px;
+/*####################################################################
+ *### ブロック
+ *####################################################################*/
+
+
+/*====================================================================
+ *= ページラッパー
+ *====================================================================*/
+.page-wrapper{
+	position: relative;
 }
 
+/*====================================================================
+ *= ヘッダー
+ *====================================================================*/
+
+.header{
+	height: 80px;
+}
+
+/*====================================================================
+ *= フッター
+ *====================================================================*/
 .footer{
 	text-align: center;
-	backgournd-color: $main-color;
+	background-color: $main-color;
 	color: $main-font-color;
-	.company{
+	padding: 1rem;
+	.footer-info{
+		.footer-info-company{
+			font-size: $size-h2;
+		}
 	}
-	.copyright{
+	.footer-copyright{
+	}
+}
 
+/*====================================================================
+ *= ホール情報
+ *====================================================================*/
+.hall-info{
+	.hall-info-image{
+		text-align: $center;
+	}
+	.hall-info-title{
+		height: 50px;
+		background-color: $sub-color;
+		border: 1px solid $sub-bd-color;
+	}
+}
+
+/*====================================================================
+ *= ホールリスト
+ *====================================================================*/
+
+.hall-list{
+	background-color: $sub-color;
+	border: 1px solid $sub-bd-color;
+	border-bottom: $none;
+	&:hover{
+		opacity: $base-opacity;
+		background-color: $main-color;
+	}
+	.hall-list-link{
+		display: block;
+		font-size: 1rem;
+		color: $base-color;
+		padding: 8px 12px;
+		&:hover{
+			color: $main-font-color;
+		}
+	}
+}
+
+/*====================================================================
+ *= 葬儀情報
+ *====================================================================*/
+.funeral-info-header{
+	
+}
+.funeral-info-body{
+	background-color: $sub-color;
+	.funeral-info-list{
+		background-color: $sub-color;
+		.funeral-info-list-name{
+			font-weight: $weight-bold;
+			font-size: $size-font-2;
+		}
+	}
+	.funeral-info-button{
+		background-color: $sub-color;
 	}
 }
