@@ -46,7 +46,6 @@
  *====================================================================*/
 .error-text {
   color: #d9534f;
-  margin-bottom: 30px;
 }
 
 /*====================================================================
@@ -60,7 +59,7 @@
   opacity: 0.6;
 }
 .button.button-sub {
-  background-color: #eee;
+  background-color: #ffffff;
   color: #08d;
 }
 .button.button-sub:hover {
@@ -70,9 +69,9 @@
 /*####################################################################
  *### ブロック
  *####################################################################*/
-/*====================================================================
+/*================================================================
  *= ページラッパー
- *====================================================================*/
+ *==============================================================*/
 .page-wrapper {
   position: relative;
 }
@@ -95,6 +94,26 @@
 }
 .footer .footer-info .footer-info-company {
   font-size: 1.5rem;
+}
+
+/*====================================================================
+ *= プログレスバー
+ *====================================================================*/
+.progressbar {
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 20px;
+  margin: 0 0 0 0;
+}
+.progressbar .is-now {
+  background-color: #08d;
+  color: #ffffff;
+  border-right: 2px solid #ffffff;
+}
+.progressbar .is-out {
+  background-color: #eee;
+  color: #000000;
+  border-right: 2px solid #ffffff;
 }
 
 /*====================================================================
@@ -132,20 +151,66 @@
 }
 
 /*====================================================================
- *= 葬儀情報
+ *= 葬儀情報(index.html)
  *====================================================================*/
-.funeral-info {
+.funeral-info .funeral-info-date {
+  font-size: 1rem;
+}
+.funeral-info .funeral-info-body {
+  margin: 0 auto;
   background-color: #eee;
 }
-.funeral-info .funeral-info-list {
+.funeral-info .funeral-info-body .funeral-info-list {
   background-color: #eee;
 }
-.funeral-info .funeral-info-list .funeral-info-list-name {
+.funeral-info .funeral-info-body .funeral-info-list .funeral-info-list-name {
   font-weight: 700;
   font-size: 1.125rem;
 }
-.funeral-info .funeral-info-button {
+.funeral-info .funeral-info-body .funeral-info-button {
   background-color: #eee;
 }
+
+/*================================================================
+ *= 商品情報一覧(item.html)
+ *==============================================================*/
+.item {
+  text-align: center;
+}
+.item .table .item-table-th {
+  background-color: #eee;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-weight: 600;
+  width: 50%;
+}
+.item .table .item-table-td {
+  text-align: center;
+}
+.item .table .item-table-td:hover {
+  background-color: #ffffff;
+}
+.item .item-detail,
+.item .item-select {
+  margin-bottom: 30px;
+}
+
+/*================================================================
+ *= 登録者情報入力
+ *==============================================================*/
+
+
+
+
+
+/*-------------------------------------------------------------------
+ *-モーダル画面
+ *-------------------------------------------------------------------*/
+.modal-content {
+  background-color: #ffffff;
+}
+
+
+
 
 /*# sourceMappingURL=style.css.map */

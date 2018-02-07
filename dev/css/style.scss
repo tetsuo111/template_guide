@@ -5,12 +5,12 @@ $breakpoint-md: 768px;
 $breakpoint-lg: 1000px;
 
 $main-color :#08d;
-$main-font-color :#ffffff;
+$color-white :#ffffff;
 $sub-color :#eee;
 $sub-bd-color: #ddd;
 $danger-color :#d9534f;
 $label-color :#d9534f;
-$base-color: #000000;
+$color-base: #000000;
 
 $weight-light: 300;
 $weight-normal: 400 ;
@@ -33,6 +33,9 @@ $center: center;
 
 $none: none;
 
+$full: 100%;
+$half: 50%;
+
 $base-opacity: 0.6;
 
 
@@ -52,7 +55,6 @@ $base-opacity: 0.6;
 /*####################################################################
  *### 一括
  *####################################################################*/
-
 .container{
 	@include base-interval(30px);
 }
@@ -68,7 +70,7 @@ $base-opacity: 0.6;
 .page-title{
 	@include base-interval(30px);
 	background-color: $main-color;
-	color: $main-font-color;
+	color: $color-white;
 	text-align: center;
 	font-size: $size-h1;
 	.page-title-in-text{
@@ -103,13 +105,13 @@ $base-opacity: 0.6;
 .button{
 	&.button-main{
 		background-color: $main-color;
-		color: $main-font-color;
+		color: $color-white;
 		&:hover{
 			opacity: $base-opacity;
 		}
 	}
 	&.button-sub{
-		background-color: $sub-color;
+		background-color: $color-white;
 		color: $main-color;
 		&:hover{
 			opacity: $base-opacity;
@@ -122,9 +124,9 @@ $base-opacity: 0.6;
  *####################################################################*/
 
 
-/*====================================================================
+/*================================================================
  *= ページラッパー
- *====================================================================*/
+ *==============================================================*/
 .page-wrapper{
 	position: relative;
 }
@@ -143,7 +145,7 @@ $base-opacity: 0.6;
 .footer{
 	text-align: center;
 	background-color: $main-color;
-	color: $main-font-color;
+	color: $color-white;
 	padding: 1rem;
 	.footer-info{
 		.footer-info-company{
@@ -153,10 +155,31 @@ $base-opacity: 0.6;
 	.footer-copyright{
 	}
 }
+/*====================================================================
+ *= プログレスバー
+ *====================================================================*/
+
+.progressbar{
+	text-align: $center;
+	border-bottom: 2px solid $sub-bd-color;
+	padding-bottom: 20px;
+	margin: 0 0 0 0;
+	.is-now{
+		background-color: $main-color;
+		color: $color-white;
+		border-right: 2px solid $color-white;
+	}
+	.is-out{
+		background-color: $sub-color;
+		color: $color-base;
+		border-right: 2px solid $color-white;
+	}
+}
 
 /*====================================================================
  *= ホール情報
  *====================================================================*/
+
 .hall-info{
 	.hall-info-image{
 		text-align: $center;
@@ -183,10 +206,10 @@ $base-opacity: 0.6;
 	.hall-list-link{
 		display: block;
 		font-size: 1rem;
-		color: $base-color;
+		color: $color-base;
 		padding: 8px 12px;
 		&:hover{
-			color: $main-font-color;
+			color: $color-white;
 		}
 	}
 }
@@ -194,19 +217,60 @@ $base-opacity: 0.6;
 /*====================================================================
  *= 葬儀情報
  *====================================================================*/
-.funeral-info-header{
-	
-}
-.funeral-info-body{
-	background-color: $sub-color;
-	.funeral-info-list{
+.funeral-info{
+	.funeral-info-date{
+		font-size: $size-font-base;
+	}
+	.funeral-info-body{
+		margin: 0 auto;
 		background-color: $sub-color;
-		.funeral-info-list-name{
-			font-weight: $weight-bold;
-			font-size: $size-font-2;
+		.funeral-info-list{
+			background-color: $sub-color;
+			.funeral-info-list-name{
+				font-weight: $weight-bold;
+				font-size: $size-font-2;
+			}
+		}
+		.funeral-info-button{
+			background-color: $sub-color;
 		}
 	}
-	.funeral-info-button{
-		background-color: $sub-color;
+}
+
+/*================================================================
+ *= 商品情報一覧(item.html)
+ *==============================================================*/
+.item{
+	text-align: $center;
+	.table{
+		.item-table-th{
+			background-color : $sub-color;
+			border: 1px solid $sub-bd-color;
+			text-align : $center;
+			font-weight: $weight-semibold;
+			width: $half;
+		}
+		.item-table-td{
+			text-align: $center;
+			&:hover{
+				background-color: $color-white;
+			}
+		}
 	}
+	.item-detail,
+	.item-select{
+		@include base-interval(30px);
+	}
+}
+
+/*================================================================
+ *= 商品
+ *==============================================================*/
+.
+
+/*-------------------------------------------------------------------
+ *-モーダル画面
+ *-------------------------------------------------------------------*/
+.modal-content{
+	background-color: $color-white;
 }

@@ -25,9 +25,18 @@
 					</p>
 				</h1>
 			</div>
+			<section class="container">
+				<div class="progressbar columns is-flex is-vcentered is-centerd">
+					<div class="column is-3-desktop is-3-mobile is-now">ご注文情報の入力</div>
+					<div class="column is-3-desktop is-3-mobile  is-out">決済情報の入力</div>
+					<div class="column is-3-desktop is-3-mobile  is-out">入力確認画面</div>
+					<div class="column is-3-desktop is-3-mobile  is-out">完了</div>
+				</div>
+			</section>
 			<div class="container">
 				<h2 class="section-title">田中太郎様のお葬儀</h2>
 			</div>
+			
 			<section class="container">
 				<div class="hall-info">
 					<div class="columns">
@@ -84,15 +93,11 @@
 							<li class="hall-list"><a href="#" class="hall-list-link">すべてのホール</a></li>
 						</ul>
 					</div>
-					<div class="column is-full-mobile is-8-desktop">
+					<div class="column is-full-mobile is-8-desktop funeral-info">
 						<h2 class="section-title">葬儀リスト</h2>
 						<p class="error-text">現在、弔電を受付している葬儀はございません。</p>
-						<div class="columns">
-							<div class="column is-full-mobile">
-								<p class="funeral-info-date"><strong>2016年10月31日の葬儀</strong></p>
-							</div>
-						</div>
-						<div class="columns is-vcentered funeral-info">
+						<p class="funeral-info-date"><strong>2016年10月31日の葬儀</strong></p>
+						<div class="columns is-vcentered funeral-info-body">
 							<div class="column is-full-mobile is-7-desktop">
 								<ul class="funeral-info-list">
 									<li class="funeral-info-list-name">田中太郎様の葬儀</li>
@@ -106,6 +111,75 @@
 							</div>
 						</div>
 					</div>
+				</div>
+			</section>
+			<section class="container">
+				<div class="item">
+					<div class="columns">
+						<div class="column is-full-mobile is-4-desktop">
+							<figure class="image">
+								<img alt="弔電色紙" src="img/tomurai_main.jpg" class="item-image" alt="弔電色紙">
+							</figure>
+							<table class="table item-table">
+								<tbody>
+									<tr>
+										<th class="item-table-th">商品名</th>
+										<th class="item-table-th">価格(税込み)</th>
+									</tr>
+									<tr>
+										<td class="item-table-td">遥</td>
+										<td class="item-table-td">2200円</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="item-detail">
+								<a id="button-modal" class="button button-sub" data-target="#modal">詳細を見る</a>
+							</div>
+							
+							<form action="order.html">
+								<div class="item-select">
+									<button class="button button-main">この商品を選ぶ</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="container">
+				<div class="order-confirm">
+					<h2 class="section-title">商品情報の確認</h2>
+					<table class="table is-bordered order-confirm-table">
+						<tr>
+							<td>商品画像</td>
+							<td>商品名</td>
+						</tr>
+						<tr>
+							<td rowspan="3">
+								<figure class="image">
+									<img alt="商品画像" src="" width="200">
+								</figure>
+							</td>
+							<td>弔</td>
+						</tr>
+						<tr>
+							<td>価格</td>
+						</tr>
+						<tr>
+							<td>1,500円</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<p>上記価格は、台紙代＋お届け料となります。</p>
+								<p>サービスの性質上、キャンセルは葬儀の2時間前までとさせて頂きます。</p>
+							</td>
+						</tr>
+					</table>
+					<form action="item.html" method="get">
+						<div class="">
+							<input type="submit" name="return" class="button button-sub" value="商品選択画面に戻る">
+						</div>
+					</form>
+
 				</div>
 			</section>
 			<div class="container">
@@ -123,7 +197,59 @@
 				</footer>
 			</div>
 		</div>
+		<!-- 商品一覧モーダルスタート -->
+		<div id="modal" class="modal">
+			<div class="modal-background"></div>
+			<section class="modal-content">
+				<header>
+					<h1 class="page-title">遥</h1>
+				</header>
+				<div class="columns is-vcentered">
+					<div id="modal-image-block" class="column is-6 is-12-mobile">
+						<figure class="image">
+							<img src="img/haruka3.jpg" alt="遥">
+						</figure>
+						<div class="columns ud-center">
+							<figure class="column is-6-desktop is-6-mobile">
+								<img src="img/haruka3.jpg" class="modal-image" alt="遥_表">
+							</figure>
+							<figure class="column is-6-desktop is-6-mobile">
+								<img src="img/haruka_open.jpg" class="modal-image" alt="遥_開き">
+							</figure>
+						</div>
+					</div>
+					<div class="is-6 is-12-mobile modal-detail">
+						<div>
+							<h2 class="section-title">価格(税込み)</h2>
+							<p>2,200円</p>
+						</div>
+						<div>
+							<h2 class="section-title">商品説明</h2>
+							<p>フューネラルフラワーとお悔み電報のセットです。
+							フューネラルフラワーとお悔み電報のセットです。 フューネラルフラワーとお悔み電報のセットです。</p>
+						</div>
+						<div>
+							<h2 class="section-title">ご注意事項</h2>
+							<ul>
+								<li>上記価格は、台紙代＋お届け料となります。</li>
+								<li>サービスの性質上、キャンセルは葬儀の2時間前までとさせて頂きます。</li>
+								<li>商品については、品切れまたは予告なく変更する場合がございますのでご了承ください。</li>
+								<li>本商品は実物と若干異なる場合があります。</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<footer>
+					<div>
+						<button id="button-modal-close" class="button sub-button">閉じる</button>
+					</div>
+				</footer>
+			</section>
+		</div>
+		<!-- モーダル ここまで -->
 		<script type="text/javascript" src="js/jquery.slim.min.js"></script>
 		<script type="text/javascript" src="js/js-index.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/js-item.js"></script>
 	</body>
 </html>
