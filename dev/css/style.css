@@ -1,61 +1,219 @@
-/*
-Error: Invalid CSS after ".": expected class name, was "/*-------------..."
-        on line 272 of style.scss
+@charset "UTF-8";
+/*####################################################################
+ *### 基本
+ *####################################################################*/
+/*--------------------------------------------------------------------
+ *-
+ *--------------------------------------------------------------------*/
+/*####################################################################
+ *### 一括
+ *####################################################################*/
+.container {
+  margin-bottom: 30px;
+}
 
-267: }
-268: 
-269: /*================================================================
-270:  *= 商品情報確認
-271:  *==============================================================*\/
-272: .
-273: 
-274: /*-------------------------------------------------------------------
-275:  *-モーダル画面
-276:  *-------------------------------------------------------------------*\/
-277: .modal-content{
+/*####################################################################
+ *### パーツ
+ *####################################################################*/
+/*====================================================================
+ *= ページタイトル2
+ *====================================================================*/
+.page-title {
+  margin-bottom: 30px;
+  background-color: #08d;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.875rem;
+}
+.page-title .page-title-in-text {
+  font-size: 1rem;
+}
 
-Backtrace:
-style.scss:272
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:1278:in `expected'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:1208:in `expected'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:1203:in `tok!'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/static_parser.rb:197:in `class_selector'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/static_parser.rb:159:in `simple_selector_sequence'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/static_parser.rb:111:in `selector'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/static_parser.rb:86:in `selector_comma_sequence'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:1186:in `expr!'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/static_parser.rb:20:in `parse_selector'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/exec/sass_scss.rb:391:in `run'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/exec/base.rb:52:in `parse'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/exec/base.rb:19:in `parse!'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/bin/sass:13:in `<top (required)>'
-C:/Ruby24-x64/bin/sass:23:in `load'
-C:/Ruby24-x64/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \".\": expected class name, was \"/*-------------...\"\A         on line 272 of style.scss\A \A 267: }\A 268: \A 269: /*================================================================\A 270:  *= 商品情報確認\A 271:  *==============================================================*/\A 272: .\A 273: \A 274: /*-------------------------------------------------------------------\A 275:  *-モーダル画面\A 276:  *-------------------------------------------------------------------*/\A 277: .modal-content{"; }
+/*====================================================================
+ *= セクションタイトル3
+ *====================================================================*/
+.section-title {
+  margin-bottom: 30px;
+  border-left: 10px solid #08d;
+  height: 50px;
+  padding: 8px 0 0 20px;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+/*====================================================================
+ *= 各種テキスト
+ *====================================================================*/
+.error-text {
+  color: #d9534f;
+}
+
+/*====================================================================
+ *= ボタン7,10
+ *====================================================================*/
+.button.button-main {
+  background-color: #08d;
+  color: #ffffff;
+}
+.button.button-main:hover {
+  opacity: 0.6;
+}
+.button.button-sub {
+  background-color: #ffffff;
+  color: #08d;
+}
+.button.button-sub:hover {
+  opacity: 0.6;
+}
+
+/*####################################################################
+ *### ブロック
+ *####################################################################*/
+/*================================================================
+ *= ページラッパー
+ *==============================================================*/
+.page-wrapper {
+  position: relative;
+}
+
+/*====================================================================
+ *= ヘッダー1
+ *====================================================================*/
+.header {
+  height: 80px;
+}
+
+/*====================================================================
+ *= フッター8
+ *====================================================================*/
+.footer {
+  text-align: center;
+  background-color: #08d;
+  color: #ffffff;
+  padding: 1rem;
+}
+.footer .footer-info .footer-info-company {
+  font-size: 1.5rem;
+}
+
+/*====================================================================
+ *= プログレスバー12
+ *====================================================================*/
+.progressbar {
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 20px;
+  margin: 0 0 0 0;
+}
+.progressbar .is-now, .progressbar is-out {
+  border-right: 2px solid #ffffff;
+}
+.progressbar .is-now {
+  background-color: #08d;
+  color: #ffffff;
+}
+.progressbar .is-out {
+  background-color: #eee;
+  color: #000000;
+}
+
+/*====================================================================
+ *= ホール情報4
+ *====================================================================*/
+.hall-info .hall-info-image {
+  text-align: center;
+}
+.hall-info .hall-info-title {
+  height: 50px;
+  background-color: #eee;
+  border: 1px solid #ddd;
+}
+
+/*====================================================================
+ *= ホールリスト5
+ *====================================================================*/
+.hall-list {
+  background-color: #eee;
+  border: 1px solid #ddd;
+  border-bottom: none;
+}
+.hall-list:hover {
+  opacity: 0.6;
+  background-color: #08d;
+}
+.hall-list .hall-list-link {
+  display: block;
+  font-size: 1rem;
+  color: #000000;
+  padding: 8px 12px;
+}
+.hall-list .hall-list-link:hover {
+  color: #ffffff;
+}
+
+/*====================================================================
+ *= 葬儀情報6
+ *====================================================================*/
+.funeral-info .funeral-info-date {
+  font-size: 1rem;
+}
+.funeral-info .funeral-info-body {
+  margin: 0 auto;
+  background-color: #eee;
+  border: 1px solid #ddd;
+}
+.funeral-info .funeral-info-body .funeral-info-list {
+  background-color: #eee;
+}
+.funeral-info .funeral-info-body .funeral-info-list .funeral-info-list-name {
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+.funeral-info .funeral-info-body .funeral-info-button {
+  text-align: center;
+  background-color: #eee;
+}
+
+/*================================================================
+ *= 商品情報一覧(item.html)9
+ *==============================================================*/
+.item {
+  text-align: center;
+}
+.item .table .item-table-th {
+  background-color: #eee;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-weight: 600;
+  width: 50%;
+}
+.item .table .item-table-td {
+  text-align: center;
+}
+.item .table .item-table-td:hover {
+  background-color: #ffffff;
+}
+.item .item-detail,
+.item .item-select {
+  margin-bottom: 30px;
+}
+
+/*================================================================
+ *= 商品情報確認
+ *==============================================================*/
+.order-info .table.order-info-table .order-info-table-th,
+.order-info .table.order-info-table .order-info-table-td {
+  padding: 10px 5px;
+}
+.order-info .table.order-info-table .order-info-table-th {
+  background-color: #eee;
+}
+
+/*-------------------------------------------------------------------
+ *-モーダル画面
+ *-------------------------------------------------------------------*/
+.modal-content {
+  background-color: #ffffff;
+}
+
+/*# sourceMappingURL=style.css.map */

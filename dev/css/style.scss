@@ -164,15 +164,16 @@ $base-opacity: 0.6;
 	border-bottom: 2px solid $sub-bd-color;
 	padding-bottom: 20px;
 	margin: 0 0 0 0;
+	.is-now , is-out{
+		border-right: 2px solid $color-white;
+	}
 	.is-now{
 		background-color: $main-color;
 		color: $color-white;
-		border-right: 2px solid $color-white;
 	}
 	.is-out{
 		background-color: $sub-color;
 		color: $color-base;
-		border-right: 2px solid $color-white;
 	}
 }
 
@@ -224,6 +225,7 @@ $base-opacity: 0.6;
 	.funeral-info-body{
 		margin: 0 auto;
 		background-color: $sub-color;
+		border: 1px solid $sub-bd-color;
 		.funeral-info-list{
 			background-color: $sub-color;
 			.funeral-info-list-name{
@@ -232,6 +234,7 @@ $base-opacity: 0.6;
 			}
 		}
 		.funeral-info-button{
+			text-align: $center;
 			background-color: $sub-color;
 		}
 	}
@@ -266,7 +269,21 @@ $base-opacity: 0.6;
 /*================================================================
  *= 商品情報確認
  *==============================================================*/
-.
+.order-info{
+	.table{
+		&.order-info-table{
+			.order-info-table-th,
+			.order-info-table-td{
+				font-weight: $weight-normal;
+				text-align: $center;
+				padding: 10px 5px;
+			}
+			.order-info-table-th{
+				background-color: $sub-color;
+			}
+		}
+	}
+}
 
 /*-------------------------------------------------------------------
  *-モーダル画面
