@@ -9,3 +9,6 @@ gulp.task('uglify', function () {
     .pipe(uglify()) // uglifyを実行
     .pipe(gulp.dest('dist')) // 圧縮したファイルをdistに出力
 });
+gulp.task('sass' , function(){
+	
+});

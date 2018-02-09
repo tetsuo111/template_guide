@@ -8,7 +8,7 @@ $main-color :#08d;
 $color-white :#ffffff;
 $sub-color :#eee;
 $sub-bd-color: #ddd;
-$danger-color :#d9534f;
+$danger-color :#ff0000;
 $label-color :#d9534f;
 $color-base: #000000;
 
@@ -135,9 +135,7 @@ $base-opacity: 0.6;
  *= ヘッダー1
  *====================================================================*/
 
-.header{
-	height: 80px;
-}
+.header{}
 
 /*====================================================================
  *= フッター8
@@ -164,7 +162,8 @@ $base-opacity: 0.6;
 	border-bottom: 2px solid $sub-bd-color;
 	padding-bottom: 20px;
 	margin: 0 0 0 0;
-	.is-now , is-out{
+	.is-now,
+	.is-out{
 		border-right: 2px solid $color-white;
 	}
 	.is-now{
@@ -250,7 +249,7 @@ $base-opacity: 0.6;
 			background-color : $sub-color;
 			border: 1px solid $sub-bd-color;
 			text-align : $center;
-			font-weight: $weight-semibold;
+			font-weight: $weight-normal;
 			width: $half;
 		}
 		.item-table-td{
@@ -276,18 +275,66 @@ $base-opacity: 0.6;
 			.order-info-table-td{
 				font-weight: $weight-normal;
 				text-align: $center;
-				padding: 10px 5px;
+				vertical-align: middle;
 			}
 			.order-info-table-th{
 				background-color: $sub-color;
+				height: 40px;
+				padding: 0;
+			}
+			.order-info-table-td{
+				height: 120px;
 			}
 		}
 	}
 }
+/*================================================================
+ *= 利用規約
+ *==============================================================*/
 
-/*-------------------------------------------------------------------
- *-モーダル画面
- *-------------------------------------------------------------------*/
+.order-terms{
+	.order-terms-textarea{
+			height: 250px;
+			width: $full;
+	}
+	.field{
+		&.has-addons{
+			justify-content: $center;
+		}
+		.control{
+			.order-terms-check{
+				margin: 0 20px 0 0;
+				width: 30px;
+				height: 30px;
+			}
+		}
+		.order-terms-text{
+			padding: 3px 0 2px 0;
+		}
+	}
+}
+
+/*================================================================
+ *= お問い合わせ情報
+ *==============================================================*/
+
+
+
+/*================================================================
+ *= レイアウト
+ *==============================================================*/
+
+
+
+/*================================================================
+ *= クレジットカード情報
+ *==============================================================*/
+
+
+/*================================================================
+ *= モーダル画面1、2
+ *==============================================================*/
+
 .modal-content{
 	background-color: $color-white;
 }

@@ -79,10 +79,6 @@
 /*====================================================================
  *= ヘッダー1
  *====================================================================*/
-.header {
-  height: 80px;
-}
-
 /*====================================================================
  *= フッター8
  *====================================================================*/
@@ -105,7 +101,8 @@
   padding-bottom: 20px;
   margin: 0 0 0 0;
 }
-.progressbar .is-now, .progressbar is-out {
+.progressbar .is-now,
+.progressbar .is-out {
   border-right: 2px solid #ffffff;
 }
 .progressbar .is-now {
@@ -184,7 +181,7 @@
   background-color: #eee;
   border: 1px solid #ddd;
   text-align: center;
-  font-weight: 600;
+  font-weight: 400;
   width: 50%;
 }
 .item .table .item-table-td {
@@ -203,12 +200,41 @@
  *==============================================================*/
 .order-info .table.order-info-table .order-info-table-th,
 .order-info .table.order-info-table .order-info-table-td {
-  padding: 10px 5px;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
 }
 .order-info .table.order-info-table .order-info-table-th {
   background-color: #eee;
+  height: 40px;
+  padding: 0;
+}
+.order-info .table.order-info-table .order-info-table-td {
+  height: 120px;
 }
 
+/*================================================================
+ *= 利用規約
+ *==============================================================*/
+.order-terms .order-terms-textarea {
+  height: 250px;
+  width: 100%;
+}
+.order-terms .field.has-addons {
+  justify-content: center;
+}
+.order-terms .field .control .order-terms-check {
+  margin: 0 20px 0 0;
+  width: 30px;
+  height: 30px;
+}
+.order-terms .field .order-terms-text {
+  padding: 3px 0 2px 0;
+}
+
+/*================================================================
+ *= お問い合わせ情報
+ *==============================================================*/
 /*-------------------------------------------------------------------
  *-モーダル画面
  *-------------------------------------------------------------------*/
