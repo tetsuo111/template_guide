@@ -3,8 +3,10 @@
 $main-color :#08d;
 $main-font-color :#ffffff;
 $sub-color :#eee;
-$danger-color :#d9534f;
+$danger-color :red;
 $label-color :#d9534f;
+$bg-white: #ffffff;
+
 
 $weight-right : 400;
 $weight-medium: 500;
@@ -20,9 +22,13 @@ $page-size-small  :450px;
 
 $size-h1: 1.875rem;
 $size-h2: 1.5rem;
+$size-h3: 1.25rem;
 
 $left: left;
 $right: right;
+$center : center;
+
+$base-interval: 20px;
 
 .wrapper{
 	position: relative;
@@ -32,6 +38,7 @@ $right: right;
 	background-color: $main-color;
 	color: $main-font-color;
 	text-align: center;
+	margin-bottom: $base-interval;
 	h1{
 		font-size: $size-h1;
 	}
@@ -44,6 +51,7 @@ $right: right;
 	height: 50px;
 	padding: 8px 0 0 20px;
 	text-align: $left;
+	margin-bottom: $base-interval;
 	h2{
 		font-size: $size-h2;
 	}
@@ -68,17 +76,39 @@ $right: right;
 }
 
 .header{
-	height: 80px;
-	margin-bottom: 15px;
+	margin-bottom: $base-interval;
 }
+
 
 .footer{
 	text-align: center;
-	backgournd-color: $main-color;
+	background-color: $main-color;
 	color: $main-font-color;
+	padding: 0;
 	.company{
+		font-size: $size-h3;
 	}
-	.copyright{
-
+	.footer-copyright{
+		border-top: 1px solid $bg-white;
 	}
 }
+
+//hall-info
+
+//funeral-list
+
+//ホールリスト
+
+//モーダル
+
+
+//
+//利用規約
+//お問い合わせ
+//アコーディオン
+//ボード
+
+
+//クレジットお問い合わせ
+
+//
