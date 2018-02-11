@@ -69,14 +69,17 @@
 	.main-title h1{
 		font-size: 1.5rem;
 	}
+	/*** 20px ***/
 	.sub-title,
 	.modal-sub-title,
 	.footer-company{
 		font-size: 1.25rem;
 	}
+	/*** 16px ***/
 	.funeral-list-deceasedname{
 		font-size: 1rem;
 	}
+	/*** 14px ***/
 	.footer-address,
 	.footer-tel,
 	.hall-info-detail-header,
@@ -91,10 +94,12 @@
 	.order-confirm{
 		font-size: 0.875rem;
 	}
+	/*** 10px ***/
 	.order-confirm-caution,
 	.order-message-layout-caution{
 		font-size: 0.625rem;
 	}
+	/*** 8px ***/
 	.progress-current,
 	.progress-outside{
 		font-size: 0.5rem;

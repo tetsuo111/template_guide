@@ -1,19 +1,50 @@
-.wrapper {
-  position: relative; }
+@charset "UTF-8";
+/*####################################################################
+ *### 基本
+ *####################################################################*/
+/*--------------------------------------------------------------------
+ *-
+ *--------------------------------------------------------------------*/
+/*####################################################################
+ *### 一括
+ *####################################################################*/
+.container {
+  margin-bottom: 30px;
+}
 
+/*####################################################################
+ *### パーツ
+ *####################################################################*/
+/*====================================================================
+ *= ページタイトル2
+ *====================================================================*/
 .page-title {
+  margin-bottom: 30px;
   background-color: #08d;
   color: #ffffff;
   text-align: center;
+<<<<<<< HEAD
   margin-bottom: 20px; }
 .page-title h1 {
   font-size: 1.875rem; }
+=======
+  font-size: 1.875rem;
+}
+.page-title .page-title-in-text {
+  font-size: 1rem;
+}
+>>>>>>> b4259f33c6272b21910d0b3d725894c74cb9a94c
 
+/*====================================================================
+ *= セクションタイトル3
+ *====================================================================*/
 .section-title {
+  margin-bottom: 30px;
   border-left: 10px solid #08d;
   height: 50px;
   padding: 8px 0 0 20px;
   text-align: left;
+<<<<<<< HEAD
   margin-bottom: 20px; }
 .section-title h2 {
   font-size: 1.5rem; }
@@ -21,27 +52,223 @@
 .btn {
   width: 100%; }
 .btn .btn-main {
-  background-color: #08d;
-  color: #ffffff; }
-.btn .btn-main:hover {
-  opacity: 0.6; }
-.btn .btn-sub {
-  background-color: #eee;
-  color: #08d; }
-.btn .btn-sub:hover {
-  opacity: 0.6; }
+=======
+  font-size: 1.5rem;
+}
 
+/*====================================================================
+ *= 各種テキスト
+ *====================================================================*/
+.error-text {
+  color: #d9534f;
+}
+
+/*====================================================================
+ *= ボタン7,10
+ *====================================================================*/
+.button.button-main {
+>>>>>>> b4259f33c6272b21910d0b3d725894c74cb9a94c
+  background-color: #08d;
+  color: #ffffff;
+}
+.button.button-main:hover {
+  opacity: 0.6;
+}
+.button.button-sub {
+  background-color: #ffffff;
+  color: #08d;
+}
+.button.button-sub:hover {
+  opacity: 0.6;
+}
+
+<<<<<<< HEAD
 .header {
   margin-bottom: 20px; }
+=======
+/*####################################################################
+ *### ブロック
+ *####################################################################*/
+/*================================================================
+ *= ページラッパー
+ *==============================================================*/
+.page-wrapper {
+  position: relative;
+}
+>>>>>>> b4259f33c6272b21910d0b3d725894c74cb9a94c
 
+/*====================================================================
+ *= ヘッダー1
+ *====================================================================*/
+/*====================================================================
+ *= フッター8
+ *====================================================================*/
 .footer {
   text-align: center;
   background-color: #08d;
   color: #ffffff;
+<<<<<<< HEAD
   padding: 0; }
 .footer .company {
   font-size: 1.25rem; }
 .footer .footer-copyright {
   border-top: 1px solid #ffffff; }
+=======
+  padding: 1rem;
+}
+.footer .footer-info .footer-info-company {
+  font-size: 1.5rem;
+}
+
+/*====================================================================
+ *= プログレスバー12
+ *====================================================================*/
+.progressbar {
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 20px;
+  margin: 0 0 0 0;
+}
+.progressbar .is-now,
+.progressbar .is-out {
+  border-right: 2px solid #ffffff;
+}
+.progressbar .is-now {
+  background-color: #08d;
+  color: #ffffff;
+}
+.progressbar .is-out {
+  background-color: #eee;
+  color: #000000;
+}
+
+/*====================================================================
+ *= ホール情報4
+ *====================================================================*/
+.hall-info .hall-info-image {
+  text-align: center;
+}
+.hall-info .hall-info-title {
+  height: 50px;
+  background-color: #eee;
+  border: 1px solid #ddd;
+}
+
+/*====================================================================
+ *= ホールリスト5
+ *====================================================================*/
+.hall-list {
+  background-color: #eee;
+  border: 1px solid #ddd;
+  border-bottom: none;
+}
+.hall-list:hover {
+  opacity: 0.6;
+  background-color: #08d;
+}
+.hall-list .hall-list-link {
+  display: block;
+  font-size: 1rem;
+  color: #000000;
+  padding: 8px 12px;
+}
+.hall-list .hall-list-link:hover {
+  color: #ffffff;
+}
+
+/*====================================================================
+ *= 葬儀情報6
+ *====================================================================*/
+.funeral-info .funeral-info-date {
+  font-size: 1rem;
+}
+.funeral-info .funeral-info-body {
+  margin: 0 auto;
+  background-color: #eee;
+  border: 1px solid #ddd;
+}
+.funeral-info .funeral-info-body .funeral-info-list {
+  background-color: #eee;
+}
+.funeral-info .funeral-info-body .funeral-info-list .funeral-info-list-name {
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+.funeral-info .funeral-info-body .funeral-info-button {
+  text-align: center;
+  background-color: #eee;
+}
+
+/*================================================================
+ *= 商品情報一覧(item.html)9
+ *==============================================================*/
+.item {
+  text-align: center;
+}
+.item .table .item-table-th {
+  background-color: #eee;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-weight: 400;
+  width: 50%;
+}
+.item .table .item-table-td {
+  text-align: center;
+}
+.item .table .item-table-td:hover {
+  background-color: #ffffff;
+}
+.item .item-detail,
+.item .item-select {
+  margin-bottom: 30px;
+}
+
+/*================================================================
+ *= 商品情報確認
+ *==============================================================*/
+.order-info .table.order-info-table .order-info-table-th,
+.order-info .table.order-info-table .order-info-table-td {
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+}
+.order-info .table.order-info-table .order-info-table-th {
+  background-color: #eee;
+  height: 40px;
+  padding: 0;
+}
+.order-info .table.order-info-table .order-info-table-td {
+  height: 120px;
+}
+
+/*================================================================
+ *= 利用規約
+ *==============================================================*/
+.order-terms .order-terms-textarea {
+  height: 250px;
+  width: 100%;
+}
+.order-terms .field.has-addons {
+  justify-content: center;
+}
+.order-terms .field .control .order-terms-check {
+  margin: 0 20px 0 0;
+  width: 30px;
+  height: 30px;
+}
+.order-terms .field .order-terms-text {
+  padding: 3px 0 2px 0;
+}
+
+/*================================================================
+ *= お問い合わせ情報
+ *==============================================================*/
+/*-------------------------------------------------------------------
+ *-モーダル画面
+ *-------------------------------------------------------------------*/
+.modal-content {
+  background-color: #ffffff;
+}
+>>>>>>> b4259f33c6272b21910d0b3d725894c74cb9a94c
 
 /*# sourceMappingURL=style.css.map */
